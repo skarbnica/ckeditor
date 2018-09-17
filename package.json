@@ -1,0 +1,23 @@
+{
+  "name": "skarb-ckeditor",
+  "version": "1.0.1",
+  "description": "Config for ckeditor",
+  "main": "ckeditor_config.js",
+  "dependencies": {
+    "ckeditor": "^4.10.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skarbnica/ckeditor.git"
+  },
+  "author": "Dmytri Gnatiuk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/skarbnica/ckeditor/issues"
+  },
+  "homepage": "https://github.com/skarbnica/ckeditor#readme"
+}
