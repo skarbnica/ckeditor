@@ -4,5 +4,8 @@
   "type": "library",
   "keywords": [],
   "prefer-stable": true,
-  "license": "MIT"
+  "license": "MIT",
+  "require":{
+    "npm-asset": "ckeditor"
+  }
 }
