@@ -6,6 +6,6 @@
   "prefer-stable": true,
   "license": "MIT",
   "require":{
-    "npm-asset/ckeditor": "*"
+    "npm-asset/ckeditor": "*" 
   }
 }
