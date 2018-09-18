@@ -1,0 +1,11 @@
+{
+  "name": "skarbnica/ckeditor",
+  "description": "",
+  "type": "library",
+  "keywords": [],
+  "prefer-stable": true,
+  "license": "MIT",
+  "require":{
+    "npm-asset/ckeditor": "*" 
+  }
+}
