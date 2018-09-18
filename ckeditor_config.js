@@ -3,7 +3,7 @@ $('textarea.ckeditor').each(function(){
     var selector = $(this).attr('id');
     editors.push(selector);
 });
-uploadUrl = '';
+// uploadUrl = '';
 
 CKEconfig = {
     // Define the toolbar groups as it is a more accessible solution.
