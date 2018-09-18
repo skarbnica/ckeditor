@@ -3,11 +3,11 @@ $('textarea.ckeditor').each(function(){
     var selector = $(this).attr('id');
     editors.push(selector);
 });
-// uploadUrl = '';
 
 CKEconfig = {
     // Define the toolbar groups as it is a more accessible solution.
-    filebrowserUploadUrl: uploadUrl,
+    protectedSource:[],
+    filebrowserUploadUrl: uploadUrl || '',
     removePlugins: 'image',
     extraPlugins: ['justify', 'font', 'image2', 'uploadimage' ],
     toolbar: [
@@ -27,6 +27,14 @@ CKEconfig = {
     ]
 };
 
-for (var i = 0; editors.length; i++){
+CKEconfig.protectedSource.push(/<(i)[^>]*>.*<\/i>/ig);// разрешить теги <i>
+CKEconfig.protectedSource.push(/<\?[\s\S]*?\?>/g);// разрешить php-код
+CKEconfig.protectedSource.push(/<!--dev-->[\s\S]*<!--\/dev-->/g);
+CKEconfig.allowedContent = true;
+
+for (var i = 0; i < editors.length ; i++){
     CKEDITOR.replace(editors[i], CKEconfig);
 }
+
+
+
