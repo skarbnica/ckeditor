@@ -4,10 +4,12 @@ $('textarea.ckeditor').each(function(){
     editors.push(selector);
 });
 
+var uploadUrl = (filebrowserUploadUrl === undefined) ? '' : filebrowserUploadUrl;
+
 CKEconfig = {
     // Define the toolbar groups as it is a more accessible solution.
     protectedSource:[],
-    filebrowserUploadUrl: uploadUrl || '',
+    filebrowserUploadUrl: uploadUrl,
     removePlugins: 'image',
     extraPlugins: ['justify', 'font', 'image2', 'uploadimage' ],
     toolbar: [
