@@ -6,17 +6,20 @@ config.protectedSource = [];
 config.filebrowserUploadUrl = uploadUrl;
 config.removePlugins = 'image';
 config.extraPlugins = 'justify,font,image2,uploadimage,stylesheetparser,iframe';
-
+config.customConfig = null; // remove default config
 config.toolbar = [
     {name: 'document', items: ['Source']},
-    { name: 'clipboard', items: [ 'Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', '-', 'Undo', 'Redo' ] },
-    {name: 'paragraph', items: ['NumberedList', 'BulletedList', '-', 'Blockquote', '-', 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock', '-']},
+    {name: 'clipboard', items: ['Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', '-', 'Undo', 'Redo']},
+    {
+        name: 'paragraph',
+        items: ['NumberedList', 'BulletedList', '-', 'Blockquote', '-', 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock', '-']
+    },
     {name: 'basicstyles', items: ['Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript', 'RemoveFormat']},
     {name: 'links', items: ['Link', 'Unlink', 'Anchor']},
-    {name: 'insert', items: [ 'Image', 'Table', 'HorizontalRule'] },
-    {name: 'styles', items: [ 'Styles', 'Format'] },
-    {name: 'tools', items: ['Maximize'] },
-    {name: 'about', items: [ 'About' ] }
+    {name: 'insert', items: ['Image', 'Table', 'HorizontalRule']},
+    {name: 'styles', items: ['Styles', 'Format']},
+    {name: 'tools', items: ['Maximize']},
+    {name: 'about', items: ['About']}
 ];
 
 config.stylesSet = [
@@ -24,10 +27,9 @@ config.stylesSet = [
     {'name': 'Small', 'element': 'small'},
     {'name': 'Big', 'element': 'big'},
     {'name': 'Video', 'element': 'div', attributes: {'class': 'video'}},
-    { name: 'Banner', type: 'widget', widget: 'image', attributes: { 'class': 'bigBanner' } }
+    {name: 'Banner', type: 'widget', widget: 'image', attributes: {'class': 'bigBanner'}}
 ];
 
-config.contentsCss = 'http://nevsedoma.com.ua/templates/nevsedoma/style/engine.css';
 config.format_tags = 'p;h1;h2;h3;h4;h5;h6;address;div';
 
 config.protectedSource.push(/<(style)[^>]*>.*<\/style>/ig);
@@ -42,6 +44,3 @@ config.entities = false; //отключаем кодирование кавыч�
 config.extraAllowedContent = 'style script div span i a iframe';
 
 CKEDITOR.replaceAll('ckeditor');
-
-
-
