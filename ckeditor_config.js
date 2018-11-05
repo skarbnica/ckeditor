@@ -27,6 +27,7 @@ config.stylesSet = [
     {'name': 'Small', 'element': 'small'},
     {'name': 'Big', 'element': 'big'},
     {'name': 'Video', 'element': 'div', attributes: {'class': 'video'}},
+    {'name': 'Gallery', 'elemnt': 'div', attributes: {'class': 'gallery'}},
     {name: 'Banner', type: 'widget', widget: 'image', attributes: {'class': 'bigBanner'}}
 ];
 
