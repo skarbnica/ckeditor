@@ -30,7 +30,7 @@ config.stylesSet = [
     {name: 'Banner', type: 'widget', widget: 'image', attributes: {'class': 'bigBanner'}}
 ];
 
-config.format_tags = 'p;h1;h2;h3;h4;h5;h6;address;div';
+config.format_tags = 'p;h1;h2;div';
 
 config.protectedSource.push(/<(style)[^>]*>.*<\/style>/ig);
 config.protectedSource.push(/<(script)[^>]*>.*<\/script>/ig);// разрешить теги <script>
