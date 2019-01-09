@@ -28,6 +28,10 @@ config.stylesSet = [
     {'name': 'Big', 'element': 'big'},
     {'name': 'Video', 'element': 'div', attributes: {'class': 'video'}},
     {'name': 'Gallery', 'element': 'div', attributes: {'class': 'gallery'}},
+    {'name': 'Block', 'element': 'div', attributes: {'class': 'block'}},
+    {'name': 'Block left', 'element': 'div', attributes: {'class': 'block block-left'}},
+    {'name': 'Block right', 'element': 'div', attributes: {'class': 'block block-right'}},
+    {'name': 'Block center', 'element': 'div', attributes: {'class': 'block block-center'}},
     {name: 'Banner', type: 'widget', widget: 'image', attributes: {'class': 'bigBanner'}}
 ];
 
